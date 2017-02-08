@@ -74,7 +74,6 @@
         <pluginManagement>
             <plugins>
                 <plugin>
-				
   <groupId>com.atlassian.maven.plugins</groupId>
   <artifactId>maven-clover2-plugin</artifactId>
   <configuration>
@@ -91,7 +90,7 @@
 </plugin>
 
 				
-                    <groupId>org.codehaus.mojo</groupId>
+         <plugin>           <groupId>org.codehaus.mojo</groupId>
                     <artifactId>xml-maven-plugin</artifactId>
                     <executions>
                         <execution>
