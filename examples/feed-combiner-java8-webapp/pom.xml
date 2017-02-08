@@ -168,6 +168,7 @@
                         </systemProperty>
                     </systemProperties>
                     <war>${project.build.directory}/${project.build.finalName}.war</war>
+					<mkdir dir="target/site/clover"/>
                 </configuration>
             </plugin>
         </plugins>
