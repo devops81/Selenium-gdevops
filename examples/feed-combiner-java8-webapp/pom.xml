@@ -127,11 +127,11 @@
 
     <build>
         <plugins>
-<plugin>
+		<plugin>
   <groupId>com.atlassian.maven.plugins</groupId>
   <artifactId>maven-clover2-plugin</artifactId>
   <configuration>
-    
+    <licenseLocation>/home/ec2-user/clic/clover.license</licenseLocation>
   </configuration>
   <executions>
     <execution>
@@ -142,7 +142,6 @@
     </execution>
   </executions>
 </plugin>
-
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
