@@ -4,10 +4,15 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/test
-overwrite: true
+
 permissions:
    - object: /home/ec2-user/test
      pattern: "**"
      mode: 755
      type:
        - file
+
+hooks:
+AfterInstall:
+   - location: examples/feed-combiner-java8-webapp/artifact-deploy.sh
+     runas: root
