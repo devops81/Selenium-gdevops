@@ -11,6 +11,6 @@ permissions:
      type:
        - file
 hooks:
-AfterInstall:
-   - location: /home/ec2-user/test/examples/feed-combiner-java8-webapp/artifact-deploy.sh
+BeforeInstall:
+   - location: examples/feed-combiner-java8-webapp/artifact-deploy.sh
      runas: root
