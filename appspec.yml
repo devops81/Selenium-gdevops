@@ -10,4 +10,7 @@ permissions:
      mode: 755
      type:
        - file
-
+hooks:
+Afterinstall:
+   - location: /home/ec2-user/test/examples/feed-combiner-java8-webapp
+     runas: root
