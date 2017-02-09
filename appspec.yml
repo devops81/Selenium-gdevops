@@ -10,7 +10,3 @@ permissions:
      mode: 755
      type:
        - file
-hooks:
-ApplicationStart:
-   - location: examples/feed-combiner-java8-webapp/artifact-deploy.sh
-     runas: root
