@@ -127,6 +127,21 @@
 
     <build>
         <plugins>
+		<plugin>
+  <groupId>com.atlassian.maven.plugins</groupId>
+  <artifactId>maven-clover2-plugin</artifactId>
+  <configuration>
+    <!-- <licenseLocation>/home/ec2-user/clic/clover.license</licenseLocation> -->
+  </configuration>
+  <executions>
+    <execution>
+      <phase>pre-site</phase>
+      <goals>
+        <goal>instrument</goal>
+      </goals>
+    </execution>
+  </executions>
+</plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -168,6 +183,7 @@
                         </systemProperty>
                     </systemProperties>
                     <war>${project.build.directory}/${project.build.finalName}.war</war>
+					<mkdir dir="target/site/clover"/>
                 </configuration>
             </plugin>
         </plugins>

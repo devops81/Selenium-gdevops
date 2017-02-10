@@ -73,8 +73,23 @@
     <build>
         <pluginManagement>
             <plugins>
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
+<plugin>
+  <groupId>com.atlassian.maven.plugins</groupId>
+  <artifactId>maven-clover2-plugin</artifactId>
+  <configuration>
+    <!-- <licenseLocation>/home/ec2-user/clic/clover.license</licenseLocation> -->
+  </configuration>
+  <executions>
+    <execution>
+      <phase>pre-site</phase>
+      <goals>
+        <goal>instrument</goal>
+      </goals>
+    </execution>
+  </executions>
+</plugin>
+				
+         <plugin>           <groupId>org.codehaus.mojo</groupId>
                     <artifactId>xml-maven-plugin</artifactId>
                     <executions>
                         <execution>
