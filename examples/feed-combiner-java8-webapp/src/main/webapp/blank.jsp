@@ -13,6 +13,6 @@
         </td>
 	  </tr>
 	</table>
-<% request.getSession().removeAttribute("errorMsg"); %>
+<% request.getSession().removeAttribute("errorMsgq"); %>
 </body>
 </html>
