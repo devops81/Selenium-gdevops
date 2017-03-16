@@ -325,11 +325,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-					<configuration>
-    <forkCount>3</forkCount>
-    <reuseForks>true</reuseForks>
-    <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
-  </configuration>
+					
                     <version>2.18.1</version>
                     <configuration>
                         <!-- for convenience reasons, 'argLine' should not be overridden in child poms. if needed, a property should be declared and used here -->
